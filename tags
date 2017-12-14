@@ -1,0 +1,74 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AR	Makefile	/^AR := ar$/;"	m
+BASE_DIR	Makefile	/^BASE_DIR = .$/;"	m
+CC	Makefile	/^CC := gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS := -g -c -I $(INC)$/;"	m
+CLI_DELIMIT	src/NodeCli.c	4;"	d	file:
+CLI_SIZE	src/NodeCli.c	5;"	d	file:
+CONNECT_PEER	inc/NodeCommon.h	21;"	d
+EFLAGS	Makefile	/^EFLAGS := -fno-stack-protector -lpthread -fno-common$/;"	m
+FAILURE	inc/NodeCommon.h	17;"	d
+FAILURE	inc/NodeMain.h	6;"	d
+INC	Makefile	/^INC := .\/inc\/$/;"	m
+MAX_CLIENTS	src/socSer1.c	12;"	d	file:
+MAX_CLIENTS	src/socSer2.c	12;"	d	file:
+MAX_COMMANDS	inc/NodeCommon.h	24;"	d
+MAX_NEIGHBORS	inc/NodeCommon.h	20;"	d
+MODULE	Makefile	/^MODULE := NODE$/;"	m
+OBJS	Makefile	/^OBJS = NodeMain.o\\$/;"	m
+OBJ_DIR	Makefile	/^OBJ_DIR = .\/obj$/;"	m
+SEND_HASH	inc/NodeCommon.h	22;"	d
+SEND_TERM	inc/NodeCommon.h	23;"	d
+SRC_DIR	Makefile	/^SRC_DIR = .\/src$/;"	m
+SUCCESS	inc/NodeCommon.h	18;"	d
+SUCCESS	inc/NodeMain.h	5;"	d
+TRUE	inc/NodeCommon.h	19;"	d
+builtin_func	src/NodeCli.c	/^int (*builtin_func[]) (char **) = {$/;"	v
+builtin_str	src/NodeCli.c	/^char *builtin_str[] = {$/;"	v
+cmd_handler	inc/NodeServ.h	/^void (*cmd_handler[MAX_COMMANDS])(int *,struct node_mssg *)=$/;"	v
+cmd_id	inc/NodeServ.h	/^int cmd_id[MAX_COMMANDS]=$/;"	v
+connServTh	src/NodeCli.c	/^void connServTh(char * ip, unsigned short port)$/;"	f
+connect_api	src/sockCli.c	/^void connect_api()$/;"	f
+data	inc/NodeCommon.h	/^  int data;$/;"	m	struct:node_mssg
+estblshConn	src/NodeClnt.c	/^void estblshConn(char * ip, unsigned short port, int * sockfds)$/;"	f
+external	inc/NodeCommon.h	/^  int external;$/;"	m	struct:node_mssg
+gsockfd	inc/NodeCli.h	/^int gsockfd = 0;$/;"	v
+hash	inc/NodeCommon.h	/^  char hash[30];$/;"	m	struct:node_mssg
+initClSockfds	src/NodeClnt.c	/^void initClSockfds(int * sockfds)$/;"	f
+initSerSockfds	src/NodeServ.c	/^void initSerSockfds(int * client_sockets)$/;"	f
+internal	inc/NodeCommon.h	/^  int internal;$/;"	m	struct:node_mssg
+ip	inc/NodeCommon.h	/^  char ip[20];$/;"	m	struct:node_mssg
+main	src/NodeMain.c	/^int main(int argc, char * argv[])$/;"	f
+main	src/socSer1.c	/^int main()$/;"	f
+main	src/socSer2.c	/^int main()$/;"	f
+main	src/sockCli.c	/^int main()$/;"	f
+nodeBind	src/NodeCommon.c	/^int nodeBind(char * ipaddr, int port)$/;"	f
+nodeCli	src/NodeCli.c	/^void * nodeCli(void * args)$/;"	f
+nodeCliLoop	src/NodeCli.c	/^void nodeCliLoop(void)$/;"	f
+nodeClnt	src/NodeClnt.c	/^void * nodeClnt(void * args)$/;"	f
+nodeConPeer	src/NodeApi.c	/^void nodeConPeer(int * client_sockets, struct node_mssg * mssg)$/;"	f
+nodeConnect	src/NodeCommon.c	/^int nodeConnect(char * ipaddr, unsigned short port)$/;"	f
+nodeExecute	src/NodeCli.c	/^int nodeExecute(char **args)$/;"	f
+nodeLaunch	src/NodeCli.c	/^int nodeLaunch(char ** args)$/;"	f
+nodeReadLine	src/NodeCli.c	/^char * nodeReadLine()$/;"	f
+nodeRecv	src/NodeCommon.c	/^int nodeRecv(int sockfd, struct node_mssg * pmssg)$/;"	f
+nodeSend	src/NodeCommon.c	/^int nodeSend(int sockfd, struct node_mssg * pmssg)$/;"	f
+nodeSendHash	src/NodeApi.c	/^void nodeSendHash(int * client_sockets, struct node_mssg * mssg)$/;"	f
+nodeSendTerm	src/NodeApi.c	/^void nodeSendTerm(int * client_sockets, struct node_mssg * mssg)$/;"	f
+nodeServ	src/NodeServ.c	/^void * nodeServ(void * args)$/;"	f
+nodeSplitLine	src/NodeCli.c	/^char ** nodeSplitLine(char * line)$/;"	f
+node_connect	src/NodeCli.c	/^int node_connect(char **args)$/;"	f
+node_exit	src/NodeCli.c	/^int node_exit(char **args)$/;"	f
+node_hi	src/NodeCli.c	/^int node_hi(char **args)$/;"	f
+node_mssg	inc/NodeCommon.h	/^struct node_mssg$/;"	s
+node_num_builtins	src/NodeCli.c	/^int node_num_builtins() {$/;"	f
+port	inc/NodeCommon.h	/^  int port;$/;"	m	struct:node_mssg
+sendPeer	src/NodeClnt.c	/^void sendPeer(int * sockfds,struct node_mssg * pmssg)$/;"	f
+sockfd	src/sockCli.c	/^int *sockfd;$/;"	v
+timer_handler	src/socSer1.c	/^void timer_handler (int signum)$/;"	f
+timer_handler	src/socSer2.c	/^void timer_handler (int signum)$/;"	f
